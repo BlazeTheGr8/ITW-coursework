@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image {
+    display: block;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.image::before {
+    content: "";
+    width: 450px;
+    height: 450px;
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 50%;
+    left: 10%;
+    z-index: 1;
+}
+
+body {
+    background-color: black;
+    padding: 0% 20%;
+}
+
+.header2 {
+    position: absolute;
+    top: 0;
+    left: 70%;
+}
+
+h1, h1 + p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0%;
+}
+
+h2 {
+    margin: 5%;
+}
+
+.history, .container {
+    display: flex;
+}
+
+.history {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.year {
+    flex: 1;
+    margin-right: 50px;
+    padding: 5px 5px;
+    background-color: inherit;
+    position: relative;
+}
+
+.year-txt{
+    background-color: aliceblue;
+    border-radius: 9px 9px 9px 9px;
+    padding: 2%;
+    text-align: center;
+    width: 110%;
+}
+
+/* .line::after {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #333333;
+    position: absolute;
+    left: 129%;
+    top: 12px;
+} */
+
+.line::after {
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #333333;
+    position: absolute;
+    left: 129%;
+    top: 12px;
+}
+
+.desc {
+    flex: 2;
+    padding: 5px 40px;
+    background-color: inherit;
+}
+
+/* .year::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #333333;
+    position: absolute;
+    left: 124%;
+    z-index: 1;
+} */
+
+.year::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #ff0101;
+    position: absolute;
+    left: 124%;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.page {
+    background-color: #EADECE;
+    width: 100%;
+    display: block;
+    align-self: center;
+}

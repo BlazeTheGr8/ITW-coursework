@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="user">User id:</label>
+        <input type="number" id="user" minlength="5" maxlength="12" required><br/>
+        <br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="5" maxlength="12" required><br/>
+        <br>
+
+        <label for="name">Name:</label>
+        <input onkeypress="return /[a-z]/i.test(event.key)" type="text" id="name">
+        <br/>
+    </form>
+</body>
+</html>
